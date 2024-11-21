@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to my illegal dark web car buying site</title>
+    <style>
+        div {
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+            width: auto;
+            margin: 0 20vw;
+        }
+
+        img {
+            width: 60vw;
+            background-color: grey;
+        }
+
+        label {
+            display: block;
+            text-align: center;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+
+        #buyButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #buyButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Here you can buy my dark illegal cars</h1>
+    <p>please buy me on the dark net</p>
+    <div>
+        <img src="/media/beama.jpg" alt="Dev (but on the darknet)" id="dev_but_on_the_darknet" width="720px" />
+        <label for="dev_but_on_the_darknet">an illegal dark car</label>
+        <button id="buyButton">Click here to buy</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Get references to the button and message paragraph
+        const buyButton = document.getElementById('buyButton');
+        const message = document.getElementById('message');
+
+        // Add event listener to the button
+        buyButton.addEventListener('click', function() {
+            // Change the button text
+            buyButton.style.display = 'none'; // Hide the button after click
+            message.textContent = "Illegal car successfully purchased. Shipping in 2-3 illegal business days.";
+        });
+    </script>
+</body>
+
+</html>
